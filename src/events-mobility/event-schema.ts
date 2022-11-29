@@ -3,7 +3,7 @@ import { HydratedDocument, SchemaTypes } from 'mongoose';
 
 export type EventMobilityDocument = HydratedDocument<EventMobility>;
 
-@Schema()
+@Schema({ timestamps: true })
 export class EventMobility {
   @Prop({ type: SchemaTypes.String })
   refId: string;
